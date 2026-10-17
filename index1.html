@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HoldMerge — Stop paying shipping twice on repeat orders</title>
+<meta name="description" content="HoldMerge holds a customer's back-to-back Shopify orders, suggests combining them, and lets you approve. Never touches refunds or inventory.">
+<style>
+:root{--navy:#1a2b4a;--teal:#2e8b8c;--light:#f4f7f9;--text:#24303f}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{background:var(--navy);color:#fff}nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:22px}.logo span{color:#7fd3d3}
+.hero{padding:56px 0 72px}.hero h1{font-size:44px;line-height:1.15;margin:0 0 16px;max-width:760px}
+.hero p{font-size:19px;opacity:.9;max-width:640px}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:14px 26px;border-radius:8px;font-weight:700;text-decoration:none;border:0;font-size:16px;cursor:pointer}
+.btn:hover{background:#257475}
+section{padding:64px 0}section.alt{background:var(--light)}
+h2{color:var(--navy);font-size:30px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:#fff;border:1px solid #dde4ea;border-radius:12px;padding:24px}
+.num{width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:12px}
+.card h3{margin:0 0 8px;color:var(--navy)}
+ul.safe{list-style:none;padding:0;margin:0}ul.safe li{padding:10px 0 10px 34px;position:relative;font-size:17px;border-bottom:1px solid #e3e9ee}
+ul.safe li:before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:900;font-size:20px}
+table{width:100%;border-collapse:collapse;background:#fff}td,th{border:1px solid #d3dbe2;padding:12px;text-align:left}th{background:var(--navy);color:#fff}
+.note{font-size:13px;color:#5b6775;margin-top:10px}
+.big{font-size:22px;font-weight:800;color:var(--teal)}
+.offer{background:var(--navy);color:#fff;border-radius:14px;padding:36px}
+.offer h2{color:#fff}
+form{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+input[type=email]{flex:1;min-width:240px;padding:14px;border-radius:8px;border:0;font-size:16px}
+details{background:#fff;border:1px solid #dde4ea;border-radius:10px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:700;color:var(--navy);cursor:pointer}
+footer{background:var(--navy);color:#cfd8e3;font-size:13px;padding:28px 0;text-align:center}
+@media(max-width:600px){.hero h1{font-size:32px}}
+</style></head><body>
+<header><div class="wrap"><nav><div class="logo">Hold<span>Merge</span></div><a class="btn" href="#join">Join the waitlist</a></nav>
+<div class="hero"><h1>Your customer placed 3 orders in an hour.<br>You're about to pay shipping 3 times.</h1>
+<p>HoldMerge spots back-to-back orders from the same customer, holds them for a short time, and suggests combining them into one shipment. You approve with one click. That means one box, one label, one shipping cost.</p>
+<a class="btn" href="#join">Get early access</a></div></div></header>
+
+<section><div class="wrap"><h2>How it works</h2><div class="grid">
+<div class="card"><div class="num">1</div><h3>Hold</h3><p>New orders wait a short time that you choose (for example 30 minutes) before they're released to fulfillment, so a second order has time to arrive.</p></div>
+<div class="card"><div class="num">2</div><h3>Suggest</h3><p>When the same customer orders again to the same address, HoldMerge flags the orders and shows what combining them would save.</p></div>
+<div class="card"><div class="num">3</div><h3>You approve</h3><p>Nothing is combined until you click Approve. Change your mind? Undo it with one click.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap"><h2>Built to be safe by default</h2><ul class="safe">
+<li>Never issues refunds and never charges your customer.</li>
+<li>Never changes inventory or stock levels.</li>
+<li>Your original orders stay intact, so your sales and tax reports stay accurate.</li>
+<li>Nothing is merged automatically unless you turn that on.</li>
+<li>One-click undo on every action, with a clear log of who did what.</li>
+</ul></div></section>
+
+<section><div class="wrap"><h2>A simple savings example</h2>
+<table><tr><th>Illustrative store</th><th>Without HoldMerge</th><th>With HoldMerge</th></tr>
+<tr><td>Orders per month that could be combined</td><td colspan="2">40</td></tr>
+<tr><td>Shipping labels for those orders</td><td>40 labels</td><td>20 labels (pairs combined)</td></tr>
+<tr><td>Average label cost</td><td colspan="2">$8.00</td></tr>
+<tr><td><b>Shipping cost</b></td><td>$320</td><td>$160</td></tr></table>
+<p class="big">≈ $160/month back in this example</p>
+<p class="note">Illustrative numbers only, not a promise or a measured result. Your savings depend on how often customers re-order before you ship, your carrier rates, and your packaging.</p>
+</div></section>
+
+<section class="alt" id="join"><div class="wrap"><div class="offer"><h2>Founding merchant offer</h2>
+<p>The first 100 stores on the waitlist get <b>50% off for life</b> at launch, plus early access before the app is listed on the Shopify App Store. No credit card needed, and you can unsubscribe at any time.</p>
+<!-- FormSubmit.co: first submission triggers an activation email to the inbox -->
+<form action="https://formsubmit.co/almeidasoaresartur@gmail.com" method="POST">
+<input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email">
+<input type="hidden" name="source" value="waitlist-v1"><input type="hidden" name="_subject" value="New HoldMerge waitlist signup"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<button class="btn" type="submit">Join the waitlist</button></form>
+<p class="note" style="color:#cfd8e3">We'll only email you about HoldMerge. No spam.</p></div></div></section>
+
+<section><div class="wrap"><h2>FAQ</h2>
+<details><summary>Does Shopify already combine orders?</summary><p>Shopify lets you edit orders by hand. But it doesn't spot repeat orders from the same customer for you, hold them, and let you combine them with one click. That's the gap HoldMerge fills.</p></details>
+<details><summary>Will it change my customer's payment?</summary><p>No. HoldMerge never refunds and never charges. Each customer payment stays exactly as it was.</p></details>
+<details><summary>Will it delay my shipping?</summary><p>Only by the hold time you set, and you can set it to zero for any product or order tag.</p></details>
+<details><summary>Does it work with my 3PL or shipping app?</summary><p>HoldMerge works inside Shopify's own fulfillment flow. We'll confirm compatibility with common apps before launch, and early-access members can tell us which ones they use.</p></details>
+<details><summary>How much will it cost?</summary><p>We plan a free tier for low volumes and simple paid plans. Founding members keep 50% off for life.</p></details>
+<details><summary>When does it launch?</summary><p>We're building it now. Waitlist members hear first and get access before the public listing.</p></details>
+</div></section>
+<footer>© 2026 HoldMerge · Independent app, not affiliated with Shopify Inc. · Shopify is a trademark of Shopify Inc.</footer>
+</body></html>
